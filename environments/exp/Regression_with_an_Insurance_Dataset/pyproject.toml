@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "kaggle"
+version = "0.1.0"
+description = ""
+authors = ["lgh <lghmk2@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ipykernel = "^6.29.5"
+pandas = "^2.2.3"
+missingno = "^0.5.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
