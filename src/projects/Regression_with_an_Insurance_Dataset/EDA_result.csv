@@ -1,0 +1,22 @@
+name,type,mv_process,transform
+id,interval,,drop
+Age,interval,median,
+Gender,nominal,random(uniform),encoding(nominal)
+Annual Income,ratio,median,box-cox
+Marital Status,nominal,random(uniform),encoding(nominal)
+Number of Dependents,interval,random(uniform),
+Education Level,ordinal,mode,encoding(ordinal)
+Occupation,nominal,random(uniform),encoding(nominal)
+Health Score,ratio,mean,
+Location,nominal,mode,encoding(nominal)
+Policy Type,ordinal,mode,encoding(ordinal)
+Previous Claims,interval,zero,
+Vehicle Age,ratio,median,
+Credit Score,ratio,median,
+Insurance Duration,interval,median,
+Policy Start Date,ratio,mean,datetime
+Customer Feedback,ordinal,median,encoding(ordinal)
+Smoking Status,nominal,mode,encoding(nominal)
+Exercise Frequency,ordinal,median,encoding(ordinal)
+Property Type,nominal,mode,encoding(nominal)
+Premium Amount,ratio,drop,box-cox
