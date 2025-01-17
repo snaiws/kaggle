@@ -23,6 +23,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     ca-certificates \
     tmux \
     locales \
+    sudo \
+    vim \
     && apt-get clean
 
 # locale
@@ -44,10 +46,12 @@ RUN groupadd -g ${GROUP_ID} ${GROUP_NAME} && \
 
 WORKDIR /workspace
 RUN chown -R 0:${GROUP_ID} /workspace && \
-    chmod -R 775 /workspace
+    chmod -R 775 /workspace && \
+    usermod -aG sudo ${USER_NAME}
 
 USER ${USER_NAME}
 
+RUN echo "umask 0002" >> ~/.bashrc
 
 # pyenv
 ENV PYENV_ROOT=/workspace/.pyenv
