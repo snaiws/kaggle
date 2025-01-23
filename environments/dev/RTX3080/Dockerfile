@@ -48,6 +48,7 @@ RUN chown -R 0:${GROUP_ID} /workspace && \
 
 USER ${USER_NAME}
 
+RUN echo "umask 0002" >> /etc/profile
 
 # pyenv
 ENV PYENV_ROOT=/workspace/.pyenv

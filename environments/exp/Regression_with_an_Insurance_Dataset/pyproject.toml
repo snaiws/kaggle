@@ -20,6 +20,7 @@ scikit-posthocs = "^0.11.2"
 numba = "^0.60.0"
 umap-learn = "^0.5.7"
 pynndescent = "^0.5.13"
+optuna = "^4.1.0"
 
 
 [build-system]
